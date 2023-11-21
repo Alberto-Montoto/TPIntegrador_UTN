@@ -7,14 +7,12 @@ public class Mesa {
     
     private int id_mesa;
     private Cliente cuit;
-    private Servicio id_servicio;
     private Incidente id_incidente;
     private Date fecha_ingreso;
 
-    public Mesa(int id_mesa, Cliente cuit, Servicio id_servicio, Incidente id_incicente, Date fecha_ingreso) {
+    public Mesa(int id_mesa, Cliente cuit, Incidente id_incicente, Date fecha_ingreso) {
         this.id_mesa = id_mesa;
         this.cuit = cuit;
-        this.id_servicio = id_servicio;
         this.id_incidente = id_incicente;
         this.fecha_ingreso = fecha_ingreso;
     }
@@ -36,14 +34,6 @@ public class Mesa {
 
     public void setCuit(Cliente cuit) {
         this.cuit = cuit;
-    }
-
-    public Servicio getId_servicio() {
-        return id_servicio;
-    }
-
-    public void setId_servicio(Servicio id_servicio) {
-        this.id_servicio = id_servicio;
     }
 
     public Incidente getId_incicente() {
